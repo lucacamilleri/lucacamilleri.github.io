@@ -18,11 +18,7 @@ While I may not have professional experience yet, I am eager to take on new chal
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>C#</li>
-	<li>Python</li>
-	<li>Perl</li>
-	<li>Java</li>
 	<li>HTML - CSS - JavaScript</li>
-	<li>PostgreSQL - MySQL</li>
-	<li>Git</li>
+	<li>Python</li>
+	<li>PHP</li>
 </ul>
