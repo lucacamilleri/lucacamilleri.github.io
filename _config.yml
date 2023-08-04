@@ -1,13 +1,13 @@
 # main text of home
 name: 
   &id001
-  'Vivek Krishnakumar'
-bio: 'Bioinformatics Software Test Engineer at ILMN, working on verification and validation of Illumina RUO Software'
+  'Luca Camilleri'
+bio: 'Junior Web Developer'
 title: *id001
 
 # seo plugin info
-description: Personal website of Vivek Krishnakumar, a Bioinformatics Engineer working at Illumina
-author: Vivek Krishnakumar
+description: Personal website of Luca Camilleri, a future Web Developer.
+author: Luca Camilleri
 
 # if it's an external image, update below for true
 # better with square images
@@ -20,7 +20,7 @@ resume: false
 # resume-external: true
 # resume-url: https://google.com/?q=my+resume
 
-url: //vivekkrish.com
+url: //lucacamilleri.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -42,9 +42,9 @@ disqus:
 
 # if you don't have any social links below, comment the line
 # facebook: myfacebook
-twitter: vivekkrish
+twitter: lucacamilleri05
 # google: mygoogle
-instagram: vivekkrish
+instagram: luca.camilleri05
 # pinterest: mypinterest
 linkedin: vivekkrish
 # youtube: myyoutube
@@ -59,10 +59,10 @@ github: vivekkrish
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: hello@vivekkrish.com
+email: 095luca@gmail.com
 
 # if you don't have any scientific social links below, comment the line
-scholar: cLlRcPYAAAAJ
+# scholar: cLlRcPYAAAAJ
 # researchgate: myresearchgate
 # mendeley: mymendeley
 # pubmed: mypubmed
@@ -70,18 +70,18 @@ scholar: cLlRcPYAAAAJ
 # impactstory: myimpactstory
 # figshare: myfigshare
 # slideshare: myslideshare
-speakerdeck: vivekkrish
+# speakerdeck: vivekkrish
 
 # if desired, specify custom order of social links in the array below
-social-links-order: [github, linkedin, speakerdeck, scholar, instagram, twitter, email]
+social-links-order: [github, linkedin, instagram, twitter, email]
 
 authors:
-  vivekkrish:
-    name: Vivek Krishnakumar
-    bio: Bioinformatics Engineer
+  luca:
+    name: Luca Camilleri
+    bio: Junior Web Developer
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: vivekkrish
+    twitter: lucacamilleri05
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -101,12 +101,12 @@ blog: false
 
 # if you want to include your "cv" (via an embed), 
 # set it to true and specify the source file URL
-cv: true
+cv: false
 cv_embed_url: 'https://docs.google.com/document/d/1i-qPoxZryC16uF1ULv5M33Kk8QAeA4fPcRk_zFoWvCQ/pub'
 cv_download_url: 'https://bit.ly/download-cv-vivek'
 
 # if you want to include your publications via bibbase.org, set to true
-publications: true
+publications: false
 
 # if specifying source of your publications in bibtex format,
 # use URL scheme: https://bibbase.org/show?bib={{ site.url }}/{{ site.citations_bib }}&token={{ site.bibbase_token }}&jsonp=1
