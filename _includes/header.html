@@ -1,0 +1,37 @@
+{% if page.title == "Home"
+   or page.title == "About" %}
+    {% assign showHeader = true %}
+{% else %}
+    {% assign showMinHeader = true %}
+{% endif %}
+
+{% if showHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        {% if site.about %}
+            <a class="link" href="/about">
+                <img class="selfie" alt="{{ site.name }}" src="{% unless site.external-image %}/{% endunless %}{{ site.picture }}" />
+            </a>
+        {% else %}
+            <span class="link">
+                <img class="selfie" alt="{{ site.name }}" src="{% unless site.external-image %}/{% endunless %}{{ site.picture }}" />
+            </span>
+        {% endif %}
+
+        <h1 class="title">{{ site.name }}</h1>
+        <h2 class="description">{{ site.bio }}</h2>
+
+        {% include social-links.html links=site.data.social-links %}
+    </header>
+{% endif %}
+
+{% if showMinHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        {% if page.title != "404" %}
+        <h1 class="title">{{ page.title }}</h1>
+        {% include social-links.html links=site.data.social-links %}
+        {% endif %}
+        {% include page-banner.html %}
+    </header>
+{% endif %}
+
+{% include nav.html %}

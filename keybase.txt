@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/vivekkrish
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://vivekkrish.com
+  * I am vivekkrish (https://keybase.io/vivekkrish) on keybase.
+  * I have a public key with fingerprint 7D84 D849 20CC E3E1 1EE2  AD7B 6D54 E6F5 9B84 F5D6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010186ffdbeac0aa8090262e8de975c4721d6e1bf61385fd588366b232cd236f640a",
+            "fingerprint": "7d84d84920cce3e11ee2ad7b6d54e6f59b84f5d6",
+            "host": "keybase.io",
+            "key_id": "6d54e6f59b84f5d6",
+            "kid": "01010186ffdbeac0aa8090262e8de975c4721d6e1bf61385fd588366b232cd236f640a",
+            "uid": "76c00f083bc69838dd2dc90b5070d919",
+            "username": "vivekkrish"
+        },
+        "merkle_root": {
+            "ctime": 1500609646,
+            "hash_meta": "d0115fc707d3461f4726f6760741e80987d499d44cec3f96e4b54d4ec4549975",
+            "seqno": 1267703
+        },
+        "revoke": {
+            "sig_ids": [
+                "25c4b6d05cea6c8ff773032b8a90e909447652f22e998d183bccb161b85c00f10f"
+            ]
+        },
+        "service": {
+            "hostname": "vivekkrish.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1500609773,
+    "expire_in": 157680000,
+    "prev": "01f69b9a35e1aa5cc286afefe2d6bc041bff8404810cbf7fc8de19ed84b26177",
+    "seqno": 28,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMK6AnicrVNbaB1FGD6pppqIlxql+qA1S0IVw8nM7lyjRWpKH2LxEmht0PawO/NP
+znoue7q7OTamEWwQoxhqIZVG+1CrpdKHgsqhxhY1wXqLIlLrhbbBFnwQVERpQKjB
+2aCI6KM7C8vOfP/3f//3//PelZfkWpsm3zp34MwzV1ea5maHh3ID23b8OOIEkR52
+ekacEix9oKwhSQulUDs9DsLZEswYHYCvkO8LJJHLXBAaJKeKcBdrBjgwDHuCGk2F
+8BgLXM9V2vWYYQT5TpdjwuogxLU4rKaWlmtB7CtdpBR4gDGA62seME0JMENlIIih
+mtnAYpRkEVZc4CeQDyO7Z38KS/L+A/8/6x5aouNMIWSQ8ALFpPCE1q5WEgUUcaQl
+lhkwgbjqV8Ci62EdSqU4TIrOaJdTgbhUhkIcRWlmr0rDDIQpQgxJRpgt0U+KhQqk
+vo3VCGNqFEdce4RhY3VaLZwhTjDYGgTXREpNiALlGcmABJRoAopQu8+pVZLAtmpk
+M7iMc+RZBTHUoxJkyZNw0BqXOD0POa71wPqNqAKfKWEM5x7y3ED4EoFEkhDOqGtc
+F6QUGmelqwAzHAiaeYGRcbaMZsnieqiWyLNO/cuBvIoqVlMtjtJIRWV7VkzTWk9m
+TDpcy7CPQlD4k6UQhFVtB8UG1CFOwqhqy7DIf3pmhXY5sL0WxlAIMwTlTCD7ZGmg
+vtR9w2QgfY8C9n2qlCuYb8CAq1mgELFdN4IgIjBSgeFG2aHAEuxEBi7DnP9toius
+Tn/Qclrrqn46FIMzOvvuw5fmmlpzy5uXZTco19pyzV/3qk1ctrjm/Z/jiWMjU28/
+0rwuXNG3/zr6zfgnV2x+fMXM2fLGW9JNv4/tWfvB/HB+4kmvvePy3h3Lfth1eux8
+25EPZxp3NA73fbpu84uzd5849sbxsa33bTnYdLbw1fF7f2tsvHGhe2r365MHX/3J
+2XfyhXgn+2X629seMBNvthzqveH7oy0d49HJvV9/2fVOh7dp68qZ+69tXz21eOrA
+/IabF1ZdeLr7s4XGrt5w4dn18xfblt9+fefc56fufOq5/tP97fn8/GO4ecAbeum1
+I8bZOVL8df00z+XPHf3uqsXOtWQ63vPgKP3opkL5/H74eGDlmr57xl9+4vBd+1Y1
+n9g+d6F/eu+Z57/YfWt3g/YPbuicfOXiH26agkg=
+=vSK5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vivekkrish
+
+==================================================================

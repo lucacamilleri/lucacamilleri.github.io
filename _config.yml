@@ -1,0 +1,155 @@
+# main text of home
+name: 
+  &id001
+  'Vivek Krishnakumar'
+bio: 'Bioinformatics Software Test Engineer at ILMN, working on verification and validation of Illumina RUO Software'
+title: *id001
+
+# seo plugin info
+description: Personal website of Vivek Krishnakumar, a Bioinformatics Engineer working at Illumina
+author: Vivek Krishnakumar
+
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
+
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: false
+# resume-external: true
+# resume-url: https://google.com/?q=my+resume
+
+url: //vivekkrish.com
+# your url: http://USERNAME.github.io
+
+permalink: /:title/
+
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
+
+# To enable site analytics, supply your token below
+analytics-googletag: 'G-DRKNNZ3NKX'
+
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: mydisqus # enter this from your disqus account
+  categories: [blog, project] # only show disqus for posts that have these categories
+
+# if you don't have any social links below, comment the line
+# facebook: myfacebook
+twitter: vivekkrish
+# google: mygoogle
+instagram: vivekkrish
+# pinterest: mypinterest
+linkedin: vivekkrish
+# youtube: myyoutube
+# spotify: myspotify
+github: vivekkrish
+# gitlab: mygitlab
+# keybase: mykeybase 
+# lastfm: mylastfm
+# stackoverflow: 7044681/mystackoverflow
+# quora: userquora
+# reddit: username
+# medium: medium
+# vimeo: myvimeo
+# lanyrd: mylanyrd
+email: hello@vivekkrish.com
+
+# if you don't have any scientific social links below, comment the line
+scholar: cLlRcPYAAAAJ
+# researchgate: myresearchgate
+# mendeley: mymendeley
+# pubmed: mypubmed
+# orcid: myorcid
+# impactstory: myimpactstory
+# figshare: myfigshare
+# slideshare: myslideshare
+speakerdeck: vivekkrish
+
+# if desired, specify custom order of social links in the array below
+social-links-order: [github, linkedin, speakerdeck, scholar, instagram, twitter, email]
+
+authors:
+  vivekkrish:
+    name: Vivek Krishnakumar
+    bio: Bioinformatics Engineer
+    external-image: false
+    picture: assets/images/profile.jpg
+    twitter: vivekkrish
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+projects: false
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: false
+
+# if you want to include your "cv" (via an embed), 
+# set it to true and specify the source file URL
+cv: true
+cv_embed_url: 'https://docs.google.com/document/d/1i-qPoxZryC16uF1ULv5M33Kk8QAeA4fPcRk_zFoWvCQ/pub'
+cv_download_url: 'https://bit.ly/download-cv-vivek'
+
+# if you want to include your publications via bibbase.org, set to true
+publications: true
+
+# if specifying source of your publications in bibtex format,
+# use URL scheme: https://bibbase.org/show?bib={{ site.url }}/{{ site.citations_bib }}&token={{ site.bibbase_token }}&jsonp=1
+# citations_bib: 'assets/static/citations.bib'
+# bibbase_token: '64de019d02658a039e6f5e29181573ec'
+#
+# if specifying mendeley as source of publications
+# use URL scheme: https://bibbase.org/service/mendeley/{{ site.mendeley_token }}?jsonp=1
+mendeley_token: '5b47cee1-58c2-3ec3-8bcb-6705001c1867'
+
+# embed a citation chart showing data from Google Scholar (h-index, i10-index, citations per year)
+citations_chart: 'https://docs.google.com/spreadsheets/d/1hqxW8rgndDiN_0iWX05UzVCAyAq-SvxT8QeWCEkj15Y/pubchart?oid=612393279&format=interactive'
+
+# page banner images
+page-banner:
+  curriculum-vitae: 'assets/images/cv.jpg'
+  publications: 'assets/images/publications.png'
+  '404': 'assets/images/404-meerkat.png'
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
+
+jekyll-mentions:
+    base_url: https://github.com
