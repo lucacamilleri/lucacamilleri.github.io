@@ -3,11 +3,8 @@ title: About
 layout: page
 ---
 
-<p>Hello. My name is Vivek Krishnakumar, currently based in sunny San Diego, CA.
-I am a Bioinformatics Engineer at Illumina Inc. within the Data Analysis Software 
-Test Engineering team, focused on developing bioinformatics utilities to facilitate
-the verification and validation of Illumina RUO software, along with improving and
-maintaining in-house bioinformatics libraries and test automation frameworks.
+<p>
+Hello. I'm Luca Camilleri, an 18-year-old aspiring web developer and programmer. I have a passion for technology and enjoy working with various programming languages and web technologies. Currently, I live in from Malta, but in the future I would like to live in another country!
 </p>
 
 <p>Previously, I was part of the J. Craig Venter Institute, working on plant
