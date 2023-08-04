@@ -97,7 +97,7 @@ projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: false
+blog: true
 
 # if you want to include your "cv" (via an embed), 
 # set it to true and specify the source file URL
