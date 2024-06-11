@@ -86,7 +86,7 @@ body {
 #description {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 430px;
 }
 
 #description::before {
@@ -211,7 +211,7 @@ section p, ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     transition: background-color 0.33s ease;
 }
 
@@ -226,8 +226,24 @@ section p, ul {
 }
 
 @media only screen and (max-width: 768px) {
+    #description {
+        height: 360px;
+    }
+
     #description #body {
-        padding: 165px;
+        font-size: 39px;
+    }
+
+    #about h2{
+        font-size: 26px;
+    }
+
+    #about p {
+        font-size: 18px;
+    }
+
+    #myLinks h2{
+        font-size: 26px;
     }
 }
 
@@ -252,7 +268,7 @@ section p, ul {
 #portfolio {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .portfolio-item {
@@ -261,8 +277,9 @@ section p, ul {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     transition: 0.4s ease;
+    height: 95%;
+    width: auto;
 }
 
 .row {
@@ -279,14 +296,15 @@ section p, ul {
 
 .portfolio-item img {
     width: 100%;
-    height: 300px;
+    height: 45%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
 }
 
 .portfolio-item p {
-    font-size: 16px;
+    padding: 25px;
+    font-size: 2vh;
     font-family: "PNR";
     color: #666;
 }
@@ -410,30 +428,50 @@ h2{
     max-width: 500px;
     margin: 0 auto;
     padding: 15px;
-  }
+}
   
-.container h2 {
+.container h1 {
+    padding: 30px;
+    font-family: "OGF";
+    font-weight: bold;
+    text-decoration: underline 2px solid rgb(96, 205, 255);
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 20px;
+    color: black;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .form-group label {
     font-weight: bold;
+    font-size: 20px;
     font-family: "PNB";
+    text-decoration: underline 1px rgb(96, 205, 255);
 }
 
 .form-group input,
 .form-group textarea {
+    display: flex;
+    float: left;
     width: 100%;
     padding: 10px;
+    font-size: 16px;
     border: none;
     border-bottom: 1px solid #ddd;
     font-family: "PNR";
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.16s ease-in-out;
+}
+
+#nameCheck, #surnameCheck, #emailCheck, #messageCheck {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.form-group input{
+    height: 75px;
 }
 
 .form-group textarea {
@@ -441,20 +479,39 @@ h2{
     resize: none;
 }
 
-.form-group button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #5cb85c;
-    color: white;
-    cursor: pointer;
-}
-
-.form-group button:hover {
-    background-color: #4cae4c;
+.form-group input:focus, .form-group textarea:focus{
+    transform: scale(1.02);
+    box-shadow: 0px 4px 6px rgb(96, 205, 255);
+    transition: 0.16s ease-in-out;
 }
 
 .form-group input:focus{
     outline: none;
+}
+
+.contactBtn{
+    border: none;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+
+.navbar-toggler .bar1, .navbar-toggler .bar2, .navbar-toggler .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 30px;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
 }

@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <title>Luca Camilleri | Home</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
     <a class="logo" href="index.html">Luca Camilleri</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" type="button" onclick="animateBurger(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -29,7 +32,7 @@
               <a class="nav-link hover-underline-animation" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-underline-animation" href="designpage.html">Design</a>
+              <a class="nav-link hover-underline-animation" href="design.html">Design</a>
             </li>
         </ul>
     </div>
@@ -39,9 +42,9 @@
   </div>
   <section id="about">
     <h2>About Me</h2><br>
-    <p>Hello! I'm <b class="hover-underline-animation">Luca Camilleri</b>, a student aspiring to one day become a <b class="hover-underline-animation">Full-Stack Developer</b> based in <b class="hover-underline-animation">Malta</b>. <br><br>I have a passion for creating <b class="hover-underline-animation">interactive</b> and <b class="hover-underline-animation">user-friendly</b> websites <br><b>and</b> <br>I'm always ready to <b class="hover-underline-animation">learn</b> and take on new <b class="hover-underline-animation">challenges</b>.</p>
+    <p>Hello! I'm <b class="hover-underline-animation">Luca Camilleri</b>, a student aspiring to one day become a <b class="hover-underline-animation">Full-Stack Developer</b> based in <b class="hover-underline-animation">Malta</b>. <br><br>I have a passion for creating <b class="hover-underline-animation">interactive</b> and <b class="hover-underline-animation">user-friendly</b> websites.</p>
   </section>
-  <section style="margin-top: 0px; padding-top: 0px; padding-bottom: 30px;">
+  <section id="myLinks" style="margin-top: 0px; padding-top: 0px; padding-bottom: 30px;">
     <h2>My Links</h2><br>
     <div id="linksSection">
       <div id="links">
@@ -60,34 +63,9 @@
     <div class="toast-body">
         My Discord tag is <b>lucamalta</b>.
     </div>
-</div>
+  </div>
 </body>
 <div id="loading">
   <h2>Loading for the first time...</h2>
 </div>
-<script>
-  var loaded = localStorage.getItem("loaded");
-  if (loaded == 0 || loaded == null){
-    localStorage.setItem("loaded", 1);
-    $(window).on('load', function() {
-      setTimeout(function() {
-          $('#loading').fadeOut('slow');
-      }, 2000);
-    });
-  }else{
-    $(window).on('load', function() {
-      setTimeout(function() {
-          $('#loading').hide(0);
-      }, 0);
-    });
-  }
-
-  function openModal(type){
-    if(type == "discord"){
-      $('.toast').toast('show');
-    }
-    
-  }
-
-</script>
 </html>
