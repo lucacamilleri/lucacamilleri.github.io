@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ad9c97b037.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Luca Camilleri | Home</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="logo" href="index.html">Luca Camilleri</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="designpage.html">Design</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <div id="description">
+      <div id="body">Have a look at my <a href="portfolio.html"><span id="link" class="hover-underline-animation">portfolio</span></a></div>
+  </div>
+  <section id="about">
+    <h2>About Me</h2><br>
+    <p>Hello! I'm <b class="hover-underline-animation">Luca Camilleri</b>, a student aspiring to one day become a <b class="hover-underline-animation">Full-Stack Developer</b> based in <b class="hover-underline-animation">Malta</b>. <br><br>I have a passion for creating <b class="hover-underline-animation">interactive</b> and <b class="hover-underline-animation">user-friendly</b> websites <br><b>and</b> <br>I'm always ready to <b class="hover-underline-animation">learn</b> and take on new <b class="hover-underline-animation">challenges</b>.</p>
+  </section>
+  <section style="margin-top: 0px; padding-top: 0px; padding-bottom: 30px;">
+    <h2>My Links</h2><br>
+    <div id="linksSection">
+      <div id="links">
+        <a href="mailto:095luca@gmail.com"><i class="fa fa-envelope avatar"></i></a>
+        <span style="cursor: pointer;" onclick='openModal("discord")'><i class="fa-brands fa-discord avatar"></i></span>
+        <a href="https://mt.linkedin.com/in/lucacamilleri"><i class="fa-brands fa-linkedin avatar"></i></a>
+        <a href="https://www.github.com/lucacamilleri"><i class="fa-brands fa-github avatar"></i></a>
+      </div>
+    </div>
+  </section>
+  <div class="toast" data-autohide="false">
+    <div class="toast-header">
+        <strong class="mr-auto text-primary">Discord Tag</strong>
+        <button style="display: flex; align-items: center; width: 5px; height: 5px;" type="button" class="ml-5 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+    <div class="toast-body">
+        My Discord tag is <b>lucamalta</b>.
+    </div>
+</div>
+</body>
+<div id="loading">
+  <h2>Loading for the first time...</h2>
+</div>
+<script>
+  var loaded = localStorage.getItem("loaded");
+  if (loaded == 0 || loaded == null){
+    localStorage.setItem("loaded", 1);
+    $(window).on('load', function() {
+      setTimeout(function() {
+          $('#loading').fadeOut('slow');
+      }, 2000);
+    });
+  }else{
+    $(window).on('load', function() {
+      setTimeout(function() {
+          $('#loading').hide(0);
+      }, 0);
+    });
+  }
+
+  function openModal(type){
+    if(type == "discord"){
+      $('.toast').toast('show');
+    }
+    
+  }
+
+</script>
+</html>

@@ -1,0 +1,460 @@
+@import url('themes/fonts/ProximaNova-Regular.ttf');
+@import url('themes/fonts/ProximaNova-Bold.ttf');
+@import url('themes/fonts/ProximaNova-Black.ttf');
+@import url('themes/fonts/OGF.ttf');
+
+@font-face {
+    font-family: "PNR";
+    src: url('themes/fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PNB";
+    src: url('themes/fonts/ProximaNova-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PNBLK";
+    src: url('themes/fonts/ProximaNova-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OGF";
+    src: url('themes/fonts/OGF.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    font-weight: 500;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    margin-top: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "PNB";
+    font-size: 40px;
+    font-stretch: 100%;
+    font-weight: 600;
+    height: 60px;
+    left: 0px;
+    letter-spacing: -2px;
+    transition: color 0.33s ease;
+}
+
+.logo:hover{
+    color: rgb(96, 205, 255);
+    text-decoration: none;
+    transition: color 0.33s ease;
+}
+
+.navbar {
+    background-color: white;
+}
+
+li a {
+    text-decoration: none;
+    font-family: "PNR";
+    text-transform: uppercase;
+    color: #3a3939;
+    font-size: 25px;
+    font-weight: 700;
+    transition: color 0.33s ease;
+    color: black;
+    margin-top: 10px;
+}
+
+li a:hover{
+    color: rgb(143, 143, 143);
+    text-decoration: underline;
+    transition: color 0.33s ease;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#description {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+#description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+#description #body {
+    font-family: "PNB";
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    padding: 205px 0;
+    color: white;
+    font-weight: bold;
+}
+
+#body #link{
+    color: rgb(96, 205, 255);
+    font-weight: bold;
+    font-style: italic;
+    transition: color 0.33s ease;
+} 
+
+#body #link:hover{
+    cursor: pointer;
+    color: rgb(13, 145, 206);
+    transition: color 0.33s ease;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#portfolio .container h1 {
+    font-family: "OGF";
+    font-weight: bold;
+    text-decoration: underline 2px solid rgb(96, 205, 255);
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+section h2 {
+    font-family: "OGF";
+    font-weight: bold;
+    text-decoration: underline 2px solid rgb(96, 205, 255);
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.portfolio-item h3{
+    margin-top: 20px;
+    font-family: "OGF";
+    font-weight: bold;
+    text-decoration: underline 2px solid rgb(96, 205, 255);
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+section p, ul {
+    font-family: "OGF";
+    font-size: 25px;
+    text-align: center;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: rgb(96, 205, 255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.selected {
+    font-weight: 800;
+}
+
+#links {
+    display: flex;
+    float: left;
+}
+
+#links a{
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(96, 205, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: background-color 0.33s ease;
+}
+
+.avatar:hover{
+    background-color: rgb(3, 174, 253);
+    transition: background-color 0.33s ease;
+}
+
+#linksSection {
+    display: flex;
+    justify-content: center;   
+}
+
+@media only screen and (max-width: 768px) {
+    #description #body {
+        padding: 165px;
+    }
+}
+
+@media only screen and (max-width: 636px) {
+    #description #body {
+        padding: 135px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #description #body {
+        padding: 115px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #description #body {
+        padding: 104px;
+    }
+}
+
+#portfolio {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.portfolio-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: 0.4s ease;
+}
+
+.row {
+    display: flex;
+    justify-content: center;  
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 6px rgb(96, 205, 255);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    font-family: "PNR";
+    color: #666;
+}
+
+#designsection {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#designsection h1{
+    font-family: "PNB"
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: "PNR";
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.color {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    height: 250px;
+    font-family: "PNR";
+    font-size: 25px;
+}
+
+.primary {
+    background-color: rgb(96, 205, 255);
+}
+
+.primary:hover{
+    background-color: rgb(3, 174, 253);
+}
+
+.secondary {
+    background-color: rgb(3, 174, 253);
+}
+
+.secondary:hover {
+    background-color: rgb(1, 147, 214);
+}
+
+.tertiary {
+    background-color: rgb(1, 147, 214);
+}
+
+.tertiary:hover{
+    background-color: rgb(5, 124, 179);
+}
+
+.whitetext {
+    color: white;
+}
+
+.whitetext:hover{
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#designsection p {
+    font-family: "PNR";
+}
+
+.fonts {
+    font-size: 20px;
+}
+
+.fonts ul {
+    list-style: none;
+}
+
+button {
+    transition: background-color 0.33s ease;
+}
+
+button:hover{
+    transition: background-color 0.33s ease;
+}
+
+button:focus{
+    outline: none;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+h2{
+    font-family: "OGF";
+    font-size: 40px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-family: "PNB";
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-family: "PNR";
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    height: 125px;
+    resize: none;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+.form-group input:focus{
+    outline: none;
+}
