@@ -3,49 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="/images/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ad9c97b037.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "mq8pnjimiz");
-    </script>
+    <script src="scripts/script.js"></script>
     <title>Luca Camilleri | Home</title>
 </head>
+<nav class="navbar navbar-expand-lg">
+  <a class="logo" href="/index.html">Luca Camilleri</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" type="button" onclick="animateBurger(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link hover-underline-animation" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-underline-animation" href="/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-underline-animation" href="/contact.html">Contact</a>
+          </li>
+      </ul>
+  </div>
+</nav>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <a class="logo" href="index.html">Luca Camilleri</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" type="button" onclick="animateBurger(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link hover-underline-animation" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hover-underline-animation" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hover-underline-animation" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hover-underline-animation" href="design.html">Design</a>
-            </li>
-        </ul>
-    </div>
-  </nav>
+  <div id="loading-bar"></div>
   <div id="description">
-      <div id="body">Have a look at my <a href="portfolio.html"><span id="link" class="hover-underline-animation">portfolio</span></a></div>
+      <div id="body">Have a look at my <a href="/portfolio.html"><span id="link" class="hover-underline-animation">portfolio</span></a></div>
   </div>
   <section id="about">
     <h2>About Me</h2><br>

@@ -86,7 +86,10 @@ body {
 #description {
     position: relative;
     width: 100%;
-    height: 430px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #description::before {
@@ -103,12 +106,16 @@ body {
 
 #description #body {
     font-family: "PNB";
-    font-size: 45px;
+    font-size: 3em;
     color: black;
     text-align: center;
-    padding: 205px 0;
+    padding: 150px 0;
     color: white;
     font-weight: bold;
+}
+
+#description #body p {
+    font-size: 1.5em;
 }
 
 #body #link{
@@ -225,45 +232,101 @@ section p, ul {
     justify-content: center;   
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1661px) and (max-width: 1920px) {
+
     #description {
-        height: 360px;
+        height: 330px;
     }
 
-    #description #body {
-        font-size: 39px;
+    #description #body p {
+        font-size: 1.15em;
     }
 
-    #about h2{
-        font-size: 26px;
+    #about h2, #myLinks h2 {
+        font-size: 2.3em;
     }
 
     #about p {
-        font-size: 18px;
-    }
-
-    #myLinks h2{
-        font-size: 26px;
+        font-size: 1.8em;
     }
 }
 
-@media only screen and (max-width: 636px) {
-    #description #body {
-        padding: 135px;
+@media only screen and (min-width: 801px) and (max-width: 1660px) {
+
+    #description {
+        height: 330px;
+    }
+
+    #description #body p {
+        font-size: 1em;
+    }
+
+    #about h2, #myLinks h2 {
+        font-size: 1.4em;
+    }
+
+    #about p {
+        font-size: 1.2em;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #description #body {
-        padding: 115px;
+@media only screen and (min-width: 651px) and (max-width: 800px) {
+
+    #description {
+        height: 300px;
+    }
+
+    #description #body p {
+        font-size: 0.9em;
+    }
+
+    #about h2, #myLinks h2 {
+        font-size: 1.4em;
+    }
+
+    #about p {
+        font-size: 1.25em;
     }
 }
 
-@media only screen and (max-width: 450px) {
-    #description #body {
-        padding: 104px;
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+
+    #description {
+        height: 300px;
+    }
+
+    #description #body p {
+        font-size: 0.8em;
+    }
+
+    #about h2, #myLinks h2 {
+        font-size: 1.6em;
+    }
+
+    #about p {
+        font-size: 1.25em;
     }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 399px) {
+
+    #description {
+        height: 200px;
+    }
+
+    #description #body p {
+        font-size: 0.5em;
+    }
+
+    #about h2, #myLinks h2 {
+        font-size: 1.05em;
+    }
+
+    #about p {
+        font-size: 0.85em;
+    }
+}
+
 
 #portfolio {
     background-color: #ffffff;
@@ -504,7 +567,7 @@ h2{
 }
   
 .change .bar1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-7px, 7px);
 }
   
 .change .bar2 {
@@ -512,5 +575,24 @@ h2{
 }
   
 .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+#loading-bar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(1, 147, 214), rgb(3, 174, 253), rgb(96, 205, 255));
+    animation: loading 0.8s linear infinite;
+  }
+  
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+#portfolio .container a:hover {
+    text-decoration: none;
 }
