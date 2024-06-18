@@ -25,17 +25,28 @@ function animateBurger(x) {
 }
 
 $(document).ready(function() {
-  // Show the loading bar when a link is clicked
-  $('a').click(function() {
-    $('#loading-bar').show();
-  });
+  $('a').click(function(e) {
+      e.preventDefault();
+      var url = $(this).attr('href');
 
-  // Hide the loading bar once the new page has loaded
-  var loadBarTimeout = setTimeout(function(){
-    $('#loading-bar').hide();
-  }, 780);
-  $(window).on('load', function() {
-    clearTimeout(loadBarTimeout);
-    $('#loading-bar').hide();
+      $.ajax({
+          url: url,
+          type: 'GET',
+          success: function(data) {
+            var newContent = $(data).find('html').length ? $(data).find('html').html() : data;
+            document.open();
+            document.write(newContent);
+            window.history.pushState({page: 'Another page'}, 'Another page', url);
+            document.close();
+          },
+          error: function() {
+              console.log('Page load failed.');
+          }
+      });
   });
 });
+
+function testFunction(){
+  navigator.clipboard.writeText("lucamalta");
+  alert("Copied to clipboard!");
+}
