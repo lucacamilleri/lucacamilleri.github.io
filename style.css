@@ -13,9 +13,12 @@ nav {
     height: 30px;
 }
 
-nav a {
+* a {
     text-decoration: none;
     color: white;
+}
+
+nav a {
     font-weight: 900;
     letter-spacing: -1px;
     margin-top: 150px;
@@ -110,4 +113,24 @@ nav a::after {
 
 .container #wiph2 {
     color: rgb(255, 226, 119);
+}
+
+
+footer {
+    font-family: "Inter";
+    letter-spacing: -1px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+}
+
+footer a{
+    transition: color 0.17s ease-in-out;
+}
+
+footer a:hover{
+    color:rgb(92, 255, 86);
+    cursor: pointer;
 }
