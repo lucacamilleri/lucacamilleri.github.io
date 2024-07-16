@@ -104,9 +104,6 @@ nav a::after {
     color: rgb(255, 226, 119);
 }
 
-.rectangle:hover {
-    cursor: pointer;
-}
 
 .container #wip {
     font-size: 45px;
@@ -115,6 +112,10 @@ nav a::after {
 
 .container #wiph2 {
     color: rgb(255, 226, 119);
+}
+
+.rectangle a:hover{
+    cursor: pointer;
 }
 
 
