@@ -114,8 +114,22 @@ nav a::after {
     color: rgb(255, 226, 119);
 }
 
+.rectangle{
+    background-color: rgb(37, 37, 37);
+}
+
 .rectangle a:hover{
     cursor: pointer;
+}
+
+.rectangle h1 {
+    margin-bottom: 5px;
+}
+
+.rectangle h4{
+    color: rgb(197, 197, 197);
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
 
