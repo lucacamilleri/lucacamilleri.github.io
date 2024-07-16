@@ -150,7 +150,9 @@ footer {
     text-align: center;
     margin-top: 50px;
 
-    position: relative;
+    background-color: #222;
+
+    position: sticky;
     bottom: 0;
 
     color: white;
@@ -177,6 +179,10 @@ footer a:hover{
 
     .rectangle h1 {
         font-size: 25px;
+    }
+
+    .container #wip{
+        font-size: 40px;
     }
 
 }
