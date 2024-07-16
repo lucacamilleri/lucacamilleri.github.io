@@ -80,8 +80,9 @@ nav a::after {
 .rectangle h1{
     color: white;
     display: inline-block;
-    font-size: 45px;
+    font-size: 35px;
     transition: 0.17s ease-in-out;
+    margin-bottom: 5px;
 }
 
 .red:hover {
@@ -122,16 +123,23 @@ nav a::after {
     cursor: pointer;
 }
 
-.rectangle h1 {
-    margin-bottom: 5px;
-}
-
 .rectangle h4{
     color: rgb(197, 197, 197);
     font-weight: 400;
     letter-spacing: -1px;
 }
 
+.subheader {
+    text-align: center;
+    color: white;
+}
+
+.subheader h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -10px;
+    color: rgb(197, 197, 197);
+}
 
 footer {
     font-family: "Inter";
@@ -140,8 +148,9 @@ footer {
     width: 100%;
     height: 50px;
     text-align: center;
+    margin-top: 50px;
 
-    position: fixed;
+    position: relative;
     bottom: 0;
 
     color: white;
@@ -155,4 +164,19 @@ footer a{
 footer a:hover{
     color:rgb(92, 255, 86);
     cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    nav a {
+        font-size: 45px;
+    }
+
+    .subheader h2 {
+        font-size: 35px;
+    }
+
+    .rectangle h1 {
+        font-size: 25px;
+    }
+
 }
