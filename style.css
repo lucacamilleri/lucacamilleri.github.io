@@ -15,7 +15,6 @@ nav {
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 50px;
 }
 
 * a {
@@ -59,7 +58,6 @@ nav a::after {
 }
 
 .container {
-    margin-top: 100px;
     height: 85vh;
     display: flex;
     justify-content: center;
