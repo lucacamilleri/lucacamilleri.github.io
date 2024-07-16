@@ -26,7 +26,6 @@ nav a {
     font-weight: 900;
     letter-spacing: -1px;
     margin-top: 150px;
-    margin-bottom: 150px;
     font-size: 60px;
     transition: 0.17s ease-in-out;
 }
@@ -60,6 +59,7 @@ nav a::after {
 }
 
 .container {
+    margin-top: 100px;
     height: 85vh;
     display: flex;
     justify-content: center;
